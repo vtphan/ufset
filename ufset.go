@@ -10,10 +10,8 @@ type Element struct {
 }
 
 func Makeset(v int) *Element {
-	e := new(Element)
-	e.Rank = 0
+	e := &Element{nil, v, 0}
 	e.Parent = e
-	e.Value = v
 	return e
 }
 
